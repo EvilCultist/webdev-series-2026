@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HTML Basics — Class 1</h1>
+      <p class="sub">Semantic tags: header, main, footer, form, table</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>This short class covers basic semantic structure and a simple form and table.</p>
+    </section>
+
+    <section id="form">
+      <h2>Sign-up form</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Optional message"></textarea>
+
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="sample-data">
+      <h2>Sample table</h2>
+      <table>
+          <tr>
+            <th>#</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Structure &amp; semantic tags</td>
+            <td>15 min</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Forms</td>
+            <td>20 min</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Tables</td>
+            <td>15 min</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Q&amp;A</td>
+            <td>10 min</td>
+          </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 — HTML Basics — Practice at home</p>
+    </div>
+  </footer>
+</body>
+</html>
