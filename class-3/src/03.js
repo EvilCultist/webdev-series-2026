@@ -29,7 +29,7 @@ if (value) {
 // ---------- 3. switch / case ----------
 let fruit = "apple";
 
-switch (fruit) {
+switch (fruit) { //same as java cpp
   case "apple":
     console.log("Apples are red (usually).");
     break;

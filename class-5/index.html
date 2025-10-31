@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Async/Await & Promises Demo</title>
+  <style>
+    body{font-family:Segoe UI, Roboto, Arial, sans-serif;line-height:1.5;margin:0;padding:1rem}
+    .wrap{max-width:900px;margin:0 auto}
+    .buttons{display:flex;flex-wrap:wrap;gap:0.5rem;margin:.5rem 0}
+    button{padding:.5rem .75rem;border-radius:6px;border:1px solid #d1d5db;cursor:pointer}
+    pre{background:#0b1020;color:#e6edf3;padding:1rem;border-radius:8px;min-height:180px;overflow:auto}
+    code{background:#eef2ff;padding:.1rem .25rem;border-radius:4px}
+  </style>
+  <script defer src="./apicalling.js"></script>
+  </head>
+<body>
+  <div class="wrap">
+    <h1>Async/Await and Promises</h1>
+    <p>
+      This page calls a public demo API (<code>jsonplaceholder.typicode.com</code>) and shows how asynchronous code works.
+      Try each button and read the log below.
+    </p>
+
+    <div class="buttons">
+      <button id="btn-naive">1) Naive (no await)</button>
+      <button id="btn-then">2) Promise .then/.catch</button>
+      <button id="btn-await">3) async/await</button>
+      <button id="btn-all">4) Promise.all (parallel)</button>
+    </div>
+
+    <pre id="log" aria-live="polite"></pre>
+
+    <h2>Why async/await?</h2>
+    <ul>
+      <li>Network and file operations take time — JavaScript keeps running instead of blocking the page.</li>
+      <li>Promises model “a value that will arrive later”.</li>
+      <li><code>async/await</code> makes code easier to read and write than deeply nested <code>.then</code> chains.</li>
+      <li>Use <code>try/catch</code> with <code>await</code> to handle errors like normal synchronous code.</li>
+    </ul>
+
+    <p style="color:#6b7280;font-size:.9rem">Tip: Open DevTools Console to call methods directly, e.g. <code>demo.demoWithAsyncAwait()</code>.</p>
+  </div>
+</body>
+</html>

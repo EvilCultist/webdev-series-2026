@@ -312,6 +312,3 @@ writeFileSync("output.txt", "Hello Node!");
 - [Exploring JS](https://exploringjs.com/)
 
 ---
-
-Would you like me to extend this into a **multi-day curriculum** (e.g., 1-day / 2-day workshop plan with exercises, slides, and pacing)?
-That can make it easier to teach progressively.
